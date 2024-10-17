@@ -1,4 +1,4 @@
-import { useState, Fragment } from "react";
+import { useState } from "react";
 import { CORE_CONCEPTS } from "./data.js";
 import CoreConcept from "./components/CoreConcept.jsx";
 import Header from "./components/Header.jsx";
@@ -28,7 +28,7 @@ function App() {
   }
 
   return (
-    <Fragment>
+    <>
       <Header></Header>
       <main>
         <section id="core-concepts">
@@ -70,7 +70,7 @@ function App() {
           {tabContent}
         </section>
       </main>
-    </Fragment>
+    </>
   );
 }
 
